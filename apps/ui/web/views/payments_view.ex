@@ -16,6 +16,7 @@ defmodule Ui.PaymentsView do
 
   def render("payment.json", %{payments: payment}) do
     %{
+      id:     payment.id,
       txhash: payment.txhash,
       status: payment.status
     }
