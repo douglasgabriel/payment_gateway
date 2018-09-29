@@ -25,7 +25,7 @@ defmodule EthereumService.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poison, "~> 4.0"},
+      {:poison, "~> 2.0"},
       {:httpoison, "~> 1.3"},
     ]
   end
