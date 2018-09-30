@@ -1,4 +1,10 @@
 defmodule Core do
+  @moduledoc """
+  This APP is responsible to provide shared entities
+  to every APPs in the umbrella, and also provide
+  database comunication.
+  """
+
   use Supervisor
 
   def start_link(opts) do

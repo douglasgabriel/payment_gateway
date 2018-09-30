@@ -1,4 +1,6 @@
 defmodule Core.Schemas.Payment do
+  @moduledoc false
+
   use Ecto.Schema
   import Ecto.Changeset
   alias Core.Schemas.Payment
