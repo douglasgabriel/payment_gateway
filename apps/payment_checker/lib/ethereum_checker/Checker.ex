@@ -6,9 +6,9 @@ defmodule PaymentChecker.EthereumChecker.Checker do
     for payment <- Payments.get_unconfirmed do
       case Transaction.get_txreceipt_status(payment.txhash) do
         :ok ->
-          Payments.update(%{status: "OK"})
+          Payments.update(payment, %{status: "OK"})
         :error ->
-          Payments.update(%{status: "ERROR"})
+          Payments.update(payment, %{status: "ERROR"})
         _ ->
           nil
       end
