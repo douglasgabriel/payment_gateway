@@ -23,7 +23,7 @@ defmodule PaymentChecker do
   end
 
   defp schedule_work() do
-    schedule_check_time = 10 * 1000
+    schedule_check_time = 1000 # one second
 
     Process.send_after(self(), :work, schedule_check_time)
   end
