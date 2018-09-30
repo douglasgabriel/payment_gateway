@@ -11,6 +11,7 @@ const PaymentForm = ({onSubmit}) => {
       onSubmit={ event => {
         event.preventDefault();
         onSubmit(txhash.value)
+        txhash.value = '';
       }}>
 
       <input
