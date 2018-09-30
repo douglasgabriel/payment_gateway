@@ -28,4 +28,10 @@ defmodule Core.MixProject do
     [{:postgrex, ">= 0.11.1"},
      {:ecto, "~> 2.0"}]
   end
+
+  defp aliases do
+    [
+      "test": ["ecto.create --quiet", "ecto.migrate", "test"]
+    ]
+  end
 end
