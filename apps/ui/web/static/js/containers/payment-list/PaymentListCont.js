@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import PaymentTable from '../../components/payments-table/PaymentsTable';
+import PaymentList from '../../components/payments-list/PaymentList';
 import { fetchPayments } from '../../actions/payments.actions';
 
 const mapStateToProps = state => {
@@ -17,9 +17,9 @@ const mapDispatchToProps = dispatch => {
   };
 }
 
-const PaymentList = connect(
+const PaymentListCont = connect(
   mapStateToProps,
   mapDispatchToProps
-)(PaymentTable);
+)(PaymentList);
 
-export default PaymentList;
+export default PaymentListCont;

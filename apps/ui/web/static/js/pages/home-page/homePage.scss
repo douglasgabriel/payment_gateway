@@ -8,11 +8,40 @@
     align-items: center;
     justify-content: center;
 
-    padding: 50px 10px;
+    height: 30%;
+    width: 100%;
+  }
+
+  .overlap{
+    height: 15px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background: linear-gradient(#7046FC,  transparent);
+    z-index: 1;
   }
 
   .payment-list {
-    max-height: 400px;
+    margin: 0 auto;
     overflow-y: auto;
+    position: relative;
+    bottom: 15px;
+    height: 70%;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #9BFEA1;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #00D3B9;
+    }
   }
 }

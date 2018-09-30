@@ -16,24 +16,20 @@
     text-transform: uppercase;
     font-weight: bold; }
 
-#payments-table {
-  margin: 0 auto;
-  padding: 50px;
-  margin-top: 15px;
+.payment {
+  background-color: white;
+  list-style-type: none;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
   text-align: center;
-  border-collapse: separate;
-  border: 2px dashed #ccc;
-  border-radius: 10px;
-  border-spacing: 5em; }
-  #payments-table th, #payments-table td {
-    text-align: center; }
-  #payments-table tbody tr {
-    background-color: white;
-    margin: 10px;
-    border-radius: 10px; }
-    #payments-table tbody tr td {
-      padding: 10px;
-      margin: 10px; }
+  border-radius: 10px; }
+
+#payment-list {
+  margin: 0;
+  padding: 0; }
 
 #home-page {
   background: linear-gradient(#7172FE, #792EFD);
@@ -43,10 +39,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 10px; }
+    height: 30%;
+    width: 100%; }
+  #home-page .overlap {
+    height: 15px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background: linear-gradient(#7046FC, transparent);
+    z-index: 1; }
   #home-page .payment-list {
-    max-height: 400px;
-    overflow-y: auto; }
+    margin: 0 auto;
+    overflow-y: auto;
+    position: relative;
+    bottom: 15px;
+    height: 70%; }
+    #home-page .payment-list::-webkit-scrollbar {
+      width: 5px; }
+    #home-page .payment-list::-webkit-scrollbar-track {
+      background: transparent; }
+    #home-page .payment-list::-webkit-scrollbar-thumb {
+      background: #9BFEA1; }
+    #home-page .payment-list::-webkit-scrollbar-thumb:hover {
+      background: #00D3B9; }
 
 html, body, main {
   margin: 0;

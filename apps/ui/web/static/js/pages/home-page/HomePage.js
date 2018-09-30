@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import PaymentFormCont from '../../containers/payment-form/PaymentFormCont';
-import PaymentList from '../../containers/payment-list/PaymentList';
+import PaymentListCont from '../../containers/payment-list/PaymentListCont';
 import './homePage.scss';
 
 class HomePage extends React.Component {
@@ -13,8 +13,9 @@ class HomePage extends React.Component {
         <header>
           <PaymentFormCont />
         </header>
+        <span className="overlap"></span>
         <section className="payment-list">
-          <PaymentList />
+          <PaymentListCont />
         </section>
       </div>
     )
