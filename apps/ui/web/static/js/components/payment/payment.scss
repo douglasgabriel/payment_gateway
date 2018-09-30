@@ -16,11 +16,12 @@
 
   animation: .2s ease-out 0s 1 slideInFromLeft;
 
-  span {
-    word-break: break-all;
+  a {
+    color: white;
   }
 
-  .status{
+  span {
+    word-break: break-all;
     font-weight: bold;
   }
 

@@ -11,7 +11,11 @@ const Payment = ({ payment }) => {
   return (
     <li className={"payment z-depth-5 " + statusClass[payment.status]}>
       <span className="status">{ payment.status == null ? 'PENDING' : payment.status }</span>
-      <span>{ payment.txhash }</span>
+      <a
+        target="blank"
+        href={'https://etherscan.io/tx/' + payment.txhash }>
+        <span>{ payment.txhash }</span>
+      </a>
     </li>
   )
 }
