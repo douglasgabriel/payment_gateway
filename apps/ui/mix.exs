@@ -22,7 +22,7 @@ defmodule Ui.Mixfile do
   def application do
     [mod: {Ui, []},
      applications: [
-       :phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext, :ethereum_service, :core
+       :phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext, :ethereum_service, :core, :payment_checker
      ]
     ]
   end
@@ -42,6 +42,7 @@ defmodule Ui.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:ethereum_service, in_umbrella: true},
-     {:core, in_umbrella: true}]
+     {:core, in_umbrella: true},
+     {:payment_checker, in_umbrella: true}]
   end
 end
