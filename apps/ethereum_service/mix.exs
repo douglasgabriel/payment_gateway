@@ -27,6 +27,7 @@ defmodule EthereumService.MixProject do
     [
       {:poison, "~> 2.0"},
       {:httpoison, "~> 1.3"},
+      {:mock, "~> 0.3.0", only: :test}
     ]
   end
 end

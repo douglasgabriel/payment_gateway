@@ -1,6 +1,6 @@
 defmodule EthereumService.Etherscan.Transaction do
   @moduledoc """
-
+  Provides information about transactions from Etherscan API
   """
 
   alias EthereumService.Etherscan.Client
@@ -8,7 +8,9 @@ defmodule EthereumService.Etherscan.Transaction do
   @module_action_url "module=transaction&action="
 
   @doc """
+  Gets the status of a txhash
 
+  Returns `:ok | :error | :undefined`
   """
   def get_txreceipt_status(txhash) do
     request_txreceipt_status(txhash)
