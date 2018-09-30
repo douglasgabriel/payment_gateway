@@ -119,3 +119,7 @@ This project provides ways to communicate with external users, both by a REST AP
   - Error;
   - OK;
   - Undefined; When has this status, a worker will verify again after a fixed amount of time;
+
+### TODOs
+
+- Verify TXHash uniquiness for Payments.
