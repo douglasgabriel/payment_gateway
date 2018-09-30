@@ -27,9 +27,8 @@ defmodule Core.Management.Payments do
     end
   end
 
-  def update(params) do
-    cs = Payment.changeset(%Payment{}, params)
-
+  def update(payment, params) do
+    cs = Payment.changeset(payment, params)
     if cs.valid? do
       Repo.update(cs)
     else
