@@ -1,7 +1,7 @@
 'use strict';
 
 var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var webpack = require('webpack');
 
 function join(dest) { return path.resolve(__dirname, dest); }
@@ -36,18 +36,18 @@ var config = module.exports = {
         },
       },
       {
-        test: /\.sass$/,
-        loader: ExtractTextPlugin.extract({fallbackLoader: 'style', loader: 'css!sass?indentedSyntax&includePaths[]=' + __dirname +  '/node_modules'})
-      },
-      {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
       }
     ],
   },
 
   plugins: [
-    new ExtractTextPlugin('./web/static/css/application.css'),
+    new MiniCssExtractPlugin('./web/static/css/application.css'),
   ],
 };
 
