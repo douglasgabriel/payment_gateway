@@ -1,3 +1,3 @@
 ExUnit.start()
-{:ok, _pid} = Core.Repo.start_link
+Ecto.Adapters.SQL.Sandbox.checkout(Core.Repo)
 Ecto.Adapters.SQL.Sandbox.mode(Core.Repo, {:shared, self()})
