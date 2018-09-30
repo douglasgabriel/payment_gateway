@@ -4,13 +4,18 @@ import React from 'react';
 
 import PaymentFormCont from '../../containers/payment-form/PaymentFormCont';
 import PaymentList from '../../containers/payment-list/PaymentList';
+import './homePage.scss';
 
 class HomePage extends React.Component {
   render() {
     return (
       <div id="home-page">
-        <PaymentFormCont />
-        <PaymentList />
+        <header>
+          <PaymentFormCont />
+        </header>
+        <section className="payment-list">
+          <PaymentList />
+        </section>
       </div>
     )
   }

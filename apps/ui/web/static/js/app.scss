@@ -1,0 +1,18 @@
+html, body, main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.z-depth-5 {
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+.clickable.z-depth-5:hover{
+  transition-duration: .2s;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.success-gradient {
+  background: linear-gradient(#9BFEA1, #00D3B9)
+}

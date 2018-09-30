@@ -1,0 +1,26 @@
+#payment-form {
+  margin: 0;
+
+  > input, button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+  }
+
+  input {
+    min-width: 400px;
+    color: grey;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

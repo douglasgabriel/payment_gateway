@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PaymentRow from '../payment-row/PaymentRow';
+import './paymentsTable.scss';
 
 class PaymentsTable extends React.Component {
 
@@ -14,7 +15,7 @@ class PaymentsTable extends React.Component {
     ))
 
     return (
-      <table>
+      <table id="payments-table">
         <thead>
           <tr>
             <th>TXHash</th>

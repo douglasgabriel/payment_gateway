@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './paymentForm.scss';
 
 const PaymentForm = ({onSubmit}) => {
   let txhash;
@@ -13,10 +14,12 @@ const PaymentForm = ({onSubmit}) => {
       }}>
 
       <input
+        className="z-depth-5"
+        placeholder="Insert payment TSHash"
         ref={ node => txhash = node } />
 
-      <button type="submit">
-        Pay
+      <button type="submit" className="z-depth-5 clickable success-gradient">
+        Confirm Payment
       </button>
     </form>
   )

@@ -10,7 +10,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    componentDidMount : () => dispatch(fetchPayments())
+    componentDidMount : () => {
+      dispatch(fetchPayments());
+      setInterval(() => dispatch(fetchPayments()), 10 * 1000);
+    }
   };
 }
 

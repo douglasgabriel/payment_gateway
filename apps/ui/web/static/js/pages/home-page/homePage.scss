@@ -1,0 +1,18 @@
+#home-page {
+  background: linear-gradient(#7172FE, #792EFD);
+  height: 100%;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 10px;
+  }
+
+  .payment-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}

@@ -9,6 +9,7 @@
 
     <title>Payment Gateway</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/js/main.css") %>">
   </head>
 
   <body>
