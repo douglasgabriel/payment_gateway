@@ -27,6 +27,14 @@ defmodule PaymentChecker.MixProject do
     [
       {:core, in_umbrella: true},
       {:ethereum_service, in_umbrella: true},
+      {:mock, "~> 0.3.0", only: :test}
     ]
   end
+
+  defp aliases do
+    [
+      "test": ["ecto.create --quiet", "ecto.migrate", "test"]
+    ]
+  end
+
 end

@@ -1,4 +1,9 @@
 defmodule PaymentChecker do
+  @moduledoc """
+  Runs PaymentChecker.EthereumChecker.Checker.check_payments/0
+  every time after a amount of time
+  """
+
   use GenServer
   alias PaymentChecker.EthereumChecker.Checker
 
@@ -18,6 +23,8 @@ defmodule PaymentChecker do
   end
 
   defp schedule_work() do
-    Process.send_after(self(), :work, 10 * 1000)
+    schedule_check_time = 10 * 1000
+
+    Process.send_after(self(), :work, schedule_check_time)
   end
 end
