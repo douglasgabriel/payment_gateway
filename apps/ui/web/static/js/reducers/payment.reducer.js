@@ -14,7 +14,7 @@ export default function paymentsReducer(state = initialState.payment, action) {
       return {
         ...state,
         isBeingCreated : false,
-        items : [ ...state.items, action.payload.payment ]
+        items : [ action.payload.payment, ...state.items ]
       }
     case FETCH_PAYMENTS_REQUEST :
       return { ...state, isFetching : true }
@@ -22,7 +22,7 @@ export default function paymentsReducer(state = initialState.payment, action) {
       return {
         ...state,
         isFetching : false,
-        items : action.payload.payments
+        items : action.payload.payments.reverse((a, b) => a.id - b.id)
       }
     default:
       return state;
