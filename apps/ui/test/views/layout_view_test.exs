@@ -1,3 +1,3 @@
 defmodule Ui.LayoutViewTest do
-  use Ui.ConnCase, async: true
+  use Ui.ConnCase
 end

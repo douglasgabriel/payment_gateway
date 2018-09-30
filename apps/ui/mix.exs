@@ -45,4 +45,10 @@ defmodule Ui.Mixfile do
      {:core, in_umbrella: true},
      {:payment_checker, in_umbrella: true}]
   end
+
+  defp aliases do
+    [
+      "test": ["ecto.create --quiet", "ecto.migrate", "test"]
+    ]
+  end
 end
