@@ -44,6 +44,14 @@ Also, you may want to configure your local database. To do this you must go into
 
 ### Tests
 
+Before you can run the tests you will need to prepare your database
+
+```bash
+$ MIX_ENV=test mix ecto.create
+
+$ MIX_ENV=test mix ecto.migrate
+```
+
 It's possible to run tests from the root dir, this way it will run tests for all the umbrella apps.
 
 ```bash
