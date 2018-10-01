@@ -2,6 +2,8 @@
 
 This APP simulates the sending of a ETH transaction hash (TXHash) as payment, and confirms it against Etherscan API.
 
+[**Demo**](https://eth-payment-gateway.herokuapp.com/)
+
 ![Payment Gateway home page](./examples/payment_gateway.png)
 
 ### Tech stack
