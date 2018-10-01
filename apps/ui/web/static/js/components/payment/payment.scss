@@ -17,7 +17,7 @@
   animation: .2s ease-out 0s 1 slideInFromLeft;
 
   a {
-    color: white;
+    color: black;
   }
 
   span {
@@ -28,6 +28,10 @@
   &.success-gradient, &.error-gradient {
     color: white;
     transition-duration: .5s;
+
+    a {
+      color: white;
+    }
   }
 
   @keyframes slideInFromLeft {
